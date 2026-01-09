@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a0a1a;
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #64b5f6, #81c784, #ffb74d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+}
+
+.globe-wrapper {
+    position: relative;
+    margin: 20px 0;
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.info span {
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(100, 181, 246, 0.8);
+    padding: 0.3em 0.8em;
+    border-radius: 4px;
+    font-size: 1.5em;
+    color: #64b5f6;
+}
+
+canvas {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.countries-list {
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.countries-list h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #81c784;
+}
+
+.country-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.country-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    min-width: 100px;
+}
+
+.country-card:hover {
+    background: rgba(100, 181, 246, 0.2);
+    border-color: #64b5f6;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(100, 181, 246, 0.3);
+}
+
+.country-card .flag {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.country-card .name {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.git-message {
+    margin-top: 10px;
+    font-size: 0.75rem !important;
+    opacity: 0.4;
+    font-style: italic;
+}
+
+svg#map,
+svg#country {
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .country-card {
+        padding: 12px 18px;
+        min-width: 80px;
+    }
+
+    .country-card .flag {
+        font-size: 1.5rem;
+    }
+}
