@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopri l'Italia - Turismo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="back-btn">← Torna alla mappa</a>
+        <span class="country-name">Italia</span>
+    </nav>
+
+    <header class="hero"
+        style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1>Benvenuti in Italia</h1>
+            <p class="tagline">La dolce vita italiana</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Carte Interactive du Pays -->
+        <section class="map-section">
+            <h2>Esplora l'Italia</h2>
+            <div class="country-map">
+                <svg viewBox="1020 200 70 85" class="italy-svg" id="countryMap">
+                    <!-- Silhouette de l'Italie (vraie carte SVG) -->
+                    <path class="country-shape"
+                        d="M 1068.2 256.4 1066.5 261.5 1067.4 263.4 1066.5 266.7 1062.3 264.3 1059.6 263.6 1052.1 260.4 1052.6 257.1 1058.8 257.7 1064.2 257 1068.2 256.4 Z M 1034.2 237.4 1037.5 241.9 1037.1 250.4 1034.7 250 1032.6 252.1 1030.6 250.4 1030.1 242.7 1028.8 239.1 1031.7 239.4 1034.2 237.4 Z M 1055.9 203.9 1055.5 207 1056.9 209.7 1052.8 208.7 1048.9 211 1049.3 214.1 1048.8 215.9 1050.7 219.1 1055.7 222.3 1058.6 227.6 1064.7 232.7 1068.7 232.6 1070.1 234 1068.7 235.3 1073.5 237.6 1077.5 239.5 1082.2 242.9 1082.8 244 1082 246.3 1078.9 243.3 1074.3 242.3 1072.4 246.4 1076.3 248.8 1075.9 252.1 1073.8 252.5 1071.3 258 1069.1 258.5 1069 256.5 1069.9 253.1 1071 251.7 1068.7 248 1066.9 244.8 1064.7 244 1062.9 241.3 1059.5 240.1 1057.1 237.5 1053.3 237.1 1049 234.3 1044.1 230.1 1040.4 226.5 1038.5 220.2 1035.9 219.5 1031.7 217.4 1029.4 218.2 1026.5 221.2 1024.4 221.6 1024.9 218.9 1022.1 218.1 1020.6 213.2 1022.3 211.3 1020.8 208.9 1020.9 207.1 1023.1 208.5 1025.6 208.2 1028.3 206 1029.2 207 1031.6 206.8 1032.6 204.3 1036.4 205.1 1038.5 204 1038.8 201.5 1041.9 202.4 1042.4 201.2 1047.3 200.1 1048.6 202.2 1055.9 203.9 Z" />
+
+                    <!-- Points d'intérêt -->
+                    <circle class="poi" cx="1043.5" cy="210.5" r="1.34" data-city="Milano"
+                        data-info="Moda, Design, Duomo" />
+                    <circle class="poi" cx="1054.0" cy="216.0" r="1.34" data-city="Venezia"
+                        data-info="Canali, Gondole, Carnevale" />
+                    <circle class="poi" cx="1047.0" cy="222.0" r="1.34" data-city="Firenze"
+                        data-info="Rinascimento, Arte, Uffizi" />
+                    <circle class="poi" cx="1045.0" cy="232.0" r="1.34" data-city="Roma"
+                        data-info="Colosseo, Vaticano, Storia" />
+                    <circle class="poi" cx="1056.0" cy="244.0" r="1.34" data-city="Napoli"
+                        data-info="Pizza, Vesuvio, Pompei" />
+                    <circle class="poi" cx="1035.0" cy="250.0" r="1.34" data-city="Palermo"
+                        data-info="Sicilia, Mare, Cultura" />
+                </svg>
+                <div class="poi-tooltip" id="tooltip"></div>
+            </div>
+            <p class="map-hint">Passa il mouse sui punti per scoprire le città</p>
+        </section>
+
+        <!-- Informations générales -->
+        <section class="info-section">
+            <div class="info-card">
+                <img class="icon" src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=100&h=100&fit=crop"
+                    alt="Roma">
+                <h3>Capitale</h3>
+                <p>Roma</p>
+            </div>
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=100&h=100&fit=crop"
+                    alt="Popolazione">
+                <h3>Popolazione</h3>
+                <p>59 milioni</p>
+            </div>
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=100&h=100&fit=crop" alt="Euro">
+                <h3>Moneta</h3>
+                <p>Euro (€)</p>
+            </div>
+            <div class="info-card">
+                <img class="icon" src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?w=100&h=100&fit=crop"
+                    alt="Lingua">
+                <h3>Lingua</h3>
+                <p>Italiano</p>
+            </div>
+        </section>
+
+        <!-- Monuments -->
+        <section class="category-section">
+            <h2>Monumenti Emblematici</h2>
+            <div class="cards-grid">
+                <a href="https://it.wikipedia.org/wiki/Colosseo" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400&h=300&fit=crop"
+                            alt="Colosseo">
+                    </div>
+                    <div class="card-content">
+                        <h3>Colosseo</h3>
+                        <p>L'anfiteatro più grande del mondo romano, simbolo di Roma e dell'Italia nel mondo.</p>
+                    </div>
+                </a>
+                <a href="https://it.wikipedia.org/wiki/Torre_di_Pisa" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Exterior_of_the_Leaning_Tower_%28Pisa%29_in_April_2024.jpg/500px-Exterior_of_the_Leaning_Tower_%28Pisa%29_in_April_2024.jpg?w=400&h=300&fit=crop"
+                            alt="Torre di Pisa">
+                    </div>
+                    <div class="card-content">
+                        <h3>Torre di Pisa</h3>
+                        <p>Il campanile pendente più famoso al mondo, capolavoro dell'architettura romanica.</p>
+                    </div>
+                </a>
+                <a href="https://it.wikipedia.org/wiki/Canali_di_Venezia" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=400&h=300&fit=crop"
+                            alt="Venezia">
+                    </div>
+                    <div class="card-content">
+                        <h3>Venezia</h3>
+                        <p>La città sull'acqua con i suoi romantici canali, gondole e palazzi storici.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Gastronomie -->
+        <section class="category-section">
+            <h2>Gastronomia</h2>
+            <div class="cards-grid">
+                <a href="https://it.wikipedia.org/wiki/Pizza" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop"
+                            alt="Pizza">
+                    </div>
+                    <div class="card-content">
+                        <h3>Pizza</h3>
+                        <p>Il piatto italiano più famoso al mondo, nato a Napoli con la margherita.</p>
+                    </div>
+                </a>
+                <a href="https://it.wikipedia.org/wiki/Pasta" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=300&fit=crop"
+                            alt="Pasta">
+                    </div>
+                    <div class="card-content">
+                        <h3>Pasta</h3>
+                        <p>Oltre 300 forme diverse: spaghetti, penne, tagliatelle... Un patrimonio culinario unico.</p>
+                    </div>
+                </a>
+                <a href="https://it.wikipedia.org/wiki/Gelato" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?w=400&h=300&fit=crop"
+                            alt="Gelato">
+                    </div>
+                    <div class="card-content">
+                        <h3>Gelato</h3>
+                        <p>Il gelato artigianale italiano, cremoso e ricco di sapori autentici.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Activités -->
+        <section class="category-section">
+            <h2>Attività</h2>
+            <div class="cards-grid">
+                <a href="https://it.wikipedia.org/wiki/Costiera_amalfitana" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=400&h=300&fit=crop"
+                            alt="Costiera Amalfitana">
+                    </div>
+                    <div class="card-content">
+                        <h3>Costiera Amalfitana</h3>
+                        <p>Scogliere spettacolari, paesini colorati e il mare blu del Mediterraneo.</p>
+                    </div>
+                </a>
+                <a href="https://it.wikipedia.org/wiki/Toscana" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1534445867742-43195f401b6c?w=400&h=300&fit=crop"
+                            alt="Toscana">
+                    </div>
+                    <div class="card-content">
+                        <h3>Toscana</h3>
+                        <p>Colline ondulate, vigneti, cipressi e borghi medievali incantevoli.</p>
+                    </div>
+                </a>
+                <a href="https://it.wikipedia.org/wiki/Dolomiti" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=400&h=300&fit=crop"
+                            alt="Dolomiti">
+                    </div>
+                    <div class="card-content">
+                        <h3>Dolomiti</h3>
+                        <p>Montagne spettacolari patrimonio UNESCO, perfette per sci e trekking.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Scopri l'Italia - Make America Git Again 2025</p>
+        <p class="git-message">Git è fantastico!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
