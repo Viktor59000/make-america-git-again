@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entdecken Sie Deutschland - Tourismus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="back-btn">← Zurück zur Karte</a>
+        <span class="country-name">Deutschland</span>
+    </nav>
+
+    <header class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1>Willkommen in Deutschland</h1>
+            <p class="tagline">Land der Ideen und Traditionen</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="map-section">
+            <h2>Erkunden Sie Deutschland</h2>
+            <div class="country-map">
+                <svg viewBox="1013.2 149.1 48.7 52.1" class="country-svg" id="countryMap">
+                    <!-- Silhouette de l'Allemagne (vraie carte SVG) -->
+                    <path class="country-shape"
+                        d="M1053.9 158.9l1.4 3.1-1.2 1.7 1.9 2.1 1.5 3.3-0.2 2.2 2.4 3.9-2.2 0.6-1.3-0.7-1.1 1.2-3.5 1.2-1.7 1.6-3.4 1.3 1 1.8 0.7 2.7 2.6 1.5 3 2.6-1.6 2.9-1.7 0.8 1 4.1-0.4 1.1-1.7-1.3-2.4-0.2-3.5 1.1-4.4-0.3-0.6 1.7-2.7-1.7-1.4 0.3-5.5-1.9-1 1.3-4.2 0 0.4-4.5 2.4-4.2-7.2-1.2-2.4-1.6 0.2-2.7-1-1.4 0.4-4.2-1.1-6.5 2.9 0 1.2-2.3 0.9-5.6-0.9-2.1 0.8-1.3 4-0.3 1 1.3 3.1-3-1.3-2.3-0.4-3.4 3.7 0.8 2.9-0.9 0.3 2.3 4.9 1.4 0.1 2.2 4.7-1.2 2.6-1.6 5.6 2.4 2.4 1.9z" />
+
+                    <!-- Points d'intérêt ajustés -->
+                    <circle class="poi" cx="1050.8" cy="165.7" r="0.92" data-city="Berlin"
+                        data-info="Hauptstadt, Brandenburger Tor" />
+                    <circle class="poi" cx="1044.2" cy="194.2" r="0.92" data-city="München"
+                        data-info="Oktoberfest, Schlösser" />
+                    <circle class="poi" cx="1030.9" cy="179.9" r="0.92" data-city="Frankfurt"
+                        data-info="Finanzzentrum, Römer" />
+                    <circle class="poi" cx="1024.3" cy="175.2" r="0.92" data-city="Köln" data-info="Dom, Karneval" />
+                    <circle class="poi" cx="1037.6" cy="158.6" r="0.92" data-city="Hamburg"
+                        data-info="Hafen, Speicherstadt" />
+                    <circle class="poi" cx="1070" cy="168" r="0.92" data-city="Dresden"
+                        data-info="Frauenkirche, Kunst" />
+                </svg>
+                <div class="poi-tooltip" id="tooltip"></div>
+            </div>
+            <p class="map-hint">Fahren Sie mit der Maus über die Punkte, um Städte zu entdecken</p>
+        </section>
+
+        <section class="info-section">
+            <div class="info-card">
+                <img class="icon" src="https://images.unsplash.com/photo-1560969184-10fe8719e047?w=100&h=100&fit=crop"
+                    alt="Berlin">
+                <h3>Hauptstadt</h3>
+                <p>Berlin</p>
+            </div>
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=100&h=100&fit=crop"
+                    alt="Bevölkerung">
+                <h3>Bevölkerung</h3>
+                <p>83 Mio</p>
+            </div>
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=100&h=100&fit=crop" alt="Euro">
+                <h3>Währung</h3>
+                <p>Euro (€)</p>
+            </div>
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1527866512907-a35a62a0f6c5?w=100&h=100&fit=crop"
+                    alt="Deutsch">
+                <h3>Sprache</h3>
+                <p>Deutsch</p>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Berühmte Sehenswürdigkeiten</h2>
+            <div class="cards-grid">
+                <a href="https://de.wikipedia.org/wiki/Brandenburger_Tor" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Berlin-Brandenburg_Gate_overview.jpg/500px-Berlin-Brandenburg_Gate_overview.jpg?w=400&h=300&fit=crop"
+                            alt="Brandenburger Tor">
+                    </div>
+                    <div class="card-content">
+                        <h3>Brandenburger Tor</h3>
+                        <p>Symbol der Einheit Deutschlands, das berühmteste Wahrzeichen Berlins.</p>
+                    </div>
+                </a>
+                <a href="https://de.wikipedia.org/wiki/Schloss_Neuschwanstein" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Neuschwanstein_Castle_2024-02.jpg/500px-Neuschwanstein_Castle_2024-02.jpg?w=400&h=300&fit=crop"
+                            alt="Schloss Neuschwanstein">
+                    </div>
+                    <div class="card-content">
+                        <h3>Schloss Neuschwanstein</h3>
+                        <p>Märchenschloss in Bayern, Inspiration für Disneys Schloss.</p>
+                    </div>
+                </a>
+                <a href="https://de.wikipedia.org/wiki/Kölner_Dom" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/K%C3%B6lner_Dom_nachts_2013.jpg/500px-K%C3%B6lner_Dom_nachts_2013.jpg?w=400&h=300&fit=crop"
+                            alt="Kölner Dom">
+                    </div>
+                    <div class="card-content">
+                        <h3>Kölner Dom</h3>
+                        <p>Gotische Kathedrale mit über 600 Jahren Bauzeit, UNESCO-Welterbe.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Deutsche Küche</h2>
+            <div class="cards-grid">
+                <a href="https://de.wikipedia.org/wiki/Bratwurst" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/German_Bratw%C3%BCrste.jpg/500px-German_Bratw%C3%BCrste.jpg?w=400&h=300&fit=crop"
+                            alt="Bratwurst">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bratwurst</h3>
+                        <p>Die klassische deutsche Wurst, gegrillt und mit Senf serviert.</p>
+                    </div>
+                </a>
+                <a href="https://de.wikipedia.org/wiki/Brezel" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Kampsbrezel.jpg/500px-Kampsbrezel.jpg?w=400&h=300&fit=crop"
+                            alt="Brezel">
+                    </div>
+                    <div class="card-content">
+                        <h3>Brezel</h3>
+                        <p>Das traditionelle Laugengebäck, knusprig und salzig.</p>
+                    </div>
+                </a>
+                <a href="https://de.wikipedia.org/wiki/Bier" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Helles_im_Glas-Helles_%28pale_beer%29.jpg/330px-Helles_im_Glas-Helles_%28pale_beer%29.jpg?w=400&h=300&fit=crop"
+                            alt="Bier">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bier</h3>
+                        <p>Deutsche Braukunst seit dem Reinheitsgebot von 1516.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Aktivitäten</h2>
+            <div class="cards-grid">
+                <a href="https://de.wikipedia.org/wiki/Oktoberfest" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cabalgata_Oktoberfest_1688.JPG/500px-Cabalgata_Oktoberfest_1688.JPG?w=400&h=300&fit=crop"
+                            alt="Oktoberfest">
+                    </div>
+                    <div class="card-content">
+                        <h3>Oktoberfest</h3>
+                        <p>Das größte Volksfest der Welt in München, mit Bier und Trachten.</p>
+                    </div>
+                </a>
+                <a href="https://de.wikipedia.org/wiki/Schwarzwald" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Yburg_von_Fremersberg_%28cropped%29.jpg/500px-Yburg_von_Fremersberg_%28cropped%29.jpg?w=400&h=300&fit=crop"
+                            alt="Schwarzwald">
+                    </div>
+                    <div class="card-content">
+                        <h3>Schwarzwald</h3>
+                        <p>Wandern, Kuckucksuhren und Schwarzwälder Kirschtorte.</p>
+                    </div>
+                </a>
+                <a href="https://fr.wikipedia.org/wiki/March%C3%A9_de_No%C3%ABl" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://www.grimmheimat.de/extension/portal-ngh/var/storage/images/media/fritzlar_weihnachtsmarkt-od-mfr2/3182275-1-ger-DE/fritzlar_weihnachtsmarkt-od-mfr_fullwidth.png?w=400&h=300&fit=crop"
+                            alt="Weihnachtsmärkte">
+                    </div>
+                    <div class="card-content">
+                        <h3>Weihnachtsmärkte</h3>
+                        <p>Glühwein, Lebkuchen und festliche Atmosphäre im Winter.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Entdecken Sie Deutschland - Make America Git Again 2025</p>
+        <p class="git-message">Git ist genial!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
