@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre España - Turismo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="back-btn">← Volver al mapa</a>
+        <span class="country-name">España</span>
+    </nav>
+
+    <header class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1>Bienvenido a España</h1>
+            <p class="tagline">Pasión, cultura y sol</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="map-section">
+            <h2>Explora España</h2>
+            <div class="country-map">
+                <svg viewBox="934.9 218.8 70.4 54.7" class="country-svg" id="countryMap">
+                    <!-- Silhouette de l'Espagne (vraie carte SVG) -->
+                    <path class="country-shape"
+                        d="M976.6 223.4l2 2.4 9.5 2.9 1.9-1.4 5.8 2.9 5.9-0.8 0.4 3.7-4.9 4.2-6.6 1.4-0.5 2.1-3.2 3.5-2 5.2 2 3.7-3 2.8-1.2 4.2-4 1.3-3.7 4.9-6.8 0.1-5-0.1-3.4 2.2-2.1 2.4-2.6-0.5-1.9-2.2-1.4-3.6-4.9-1-0.4-2.2 2-2.4 0.8-1.7-1.8-1.9 1.6-4.2-2-3.8 2.3-0.5 0.3-3.1 0.8-0.9 0.3-5 2.4-1.7-1.3-3.2-3.1-0.2-0.9 0.8-3 0-1.2-3.1-2.2 0.9-1.9 1.6 0.5-4.5-2-2.7 7.4-4.6 6.2 1.1 6.9 0 5.4 1.1 4.3-0.4 8.3 0.3z" />
+
+                    <!-- Points d'intérêt ajustés -->
+                    <circle class="poi" cx="970.1" cy="243.7" r="1.14" data-city="Madrid"
+                        data-info="Capital, Prado, Palacio Real" />
+                    <circle class="poi" cx="992.5" cy="233.7" r="1.14" data-city="Barcelona"
+                        data-info="Sagrada Familia, Gaudí" />
+                    <circle class="poi" cx="957.3" cy="261.1" r="1.14" data-city="Sevilla"
+                        data-info="Flamenco, Alcázar" />
+                    <circle class="poi" cx="982.9" cy="248.6" r="1.14" data-city="Valencia"
+                        data-info="Ciudad de las Artes, Paella" />
+                    <circle class="poi" cx="963.7" cy="231.2" r="1.14" data-city="Porto"
+                        data-info="Camino de Santiago" />
+                    <circle class="poi" cx="973.3" cy="225.3" r="1.14" data-city="Bilbao"
+                        data-info="Guggenheim, Pintxos" />
+                </svg>
+                <div class="poi-tooltip" id="tooltip"></div>
+            </div>
+            <p class="map-hint">Pasa el cursor sobre los puntos para descubrir ciudades</p>
+        </section>
+
+        <section class="info-section">
+            <div class="info-card">
+                <img class="icon" src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=100&h=100&fit=crop"
+                    alt="Madrid">
+                <h3>Capital</h3>
+                <p>Madrid</p>
+            </div>
+            <div class="info-card">
+                <img class="icon" src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=100&h=100&fit=crop"
+                    alt="Poblacion">
+                <h3>Población</h3>
+                <p>47 millones</p>
+            </div>
+            <div class="info-card">
+                <img class="icon" src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=100&h=100&fit=crop"
+                    alt="Euro">
+                <h3>Moneda</h3>
+                <p>Euro (€)</p>
+            </div>
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1533613220915-609f661a6fe1?w=100&h=100&fit=crop"
+                    alt="Espanol">
+                <h3>Idioma</h3>
+                <p>Español</p>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Monumentos Emblemáticos</h2>
+            <div class="cards-grid">
+                <a href="https://es.wikipedia.org/wiki/Sagrada_Familia" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFH7JQsNHhhGkduVxCeczFHUtTDomfwBBcMQ&s?w=400&h=300&fit=crop"
+                            alt="Sagrada Familia">
+                    </div>
+                    <div class="card-content">
+                        <h3>Sagrada Familia</h3>
+                        <p>La obra maestra inacabada de Gaudí en Barcelona, un icono del modernismo catalán.</p>
+                    </div>
+                </a>
+                <a href="https://es.wikipedia.org/wiki/La_Alhambra" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg/500px-Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg?w=400&h=300&fit=crop"
+                            alt="La Alhambra">
+                    </div>
+                    <div class="card-content">
+                        <h3>La Alhambra</h3>
+                        <p>Palacio nazarí en Granada, joya de la arquitectura islámica en Europa.</p>
+                    </div>
+                </a>
+                <a href="https://es.wikipedia.org/wiki/Plaza_de_Toros" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Albero-lasventas.jpg/500px-Albero-lasventas.jpg?w=400&h=300&fit=crop"
+                            alt="Plaza de Toros">
+                    </div>
+                    <div class="card-content">
+                        <h3>Plaza de Toros</h3>
+                        <p>Las Ventas en Madrid, templo de la tauromaquia y arquitectura neo-mudéjar.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Gastronomía</h2>
+            <div class="cards-grid">
+                <a href="https://es.wikipedia.org/wiki/Paella" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/01_Paella_Valenciana_original.jpg/500px-01_Paella_Valenciana_original.jpg?w=400&h=300&fit=crop"
+                            alt="Paella">
+                    </div>
+                    <div class="card-content">
+                        <h3>Paella</h3>
+                        <p>El plato valenciano por excelencia: arroz, mariscos y azafrán en una sartén gigante.</p>
+                    </div>
+                </a>
+                <a href="https://es.wikipedia.org/wiki/Jamón_Ibérico" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Jam%C3%B3n_bellota_Mu%C3%B1ana.jpeg/500px-Jam%C3%B3n_bellota_Mu%C3%B1ana.jpeg?w=400&h=300&fit=crop"
+                            alt="Jamón Ibérico">
+                    </div>
+                    <div class="card-content">
+                        <h3>Jamón Ibérico</h3>
+                        <p>El rey de los embutidos, curado durante años para un sabor incomparable.</p>
+                    </div>
+                </a>
+                <a href="https://es.wikipedia.org/wiki/Sangr%C3%ADa_(bebida)" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Red_Wine_Sangria_with_lemon%2C_lime%2C_apple%2C_and_orange_served_in_a_glass_-_Evan_Swigart.jpg/500px-Red_Wine_Sangria_with_lemon%2C_lime%2C_apple%2C_and_orange_served_in_a_glass_-_Evan_Swigart.jpg?w=400&h=300&fit=crop"
+                            alt="Sangría">
+                    </div>
+                    <div class="card-content">
+                        <h3>Sangría</h3>
+                        <p>Vino tinto con frutas frescas, la bebida perfecta para las noches de verano.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Actividades</h2>
+            <div class="cards-grid">
+                <a href="https://es.wikipedia.org/wiki/Flamenco" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Belen_maya.jpg?w=400&h=300&fit=crop"
+                            alt="Flamenco">
+                    </div>
+                    <div class="card-content">
+                        <h3>Flamenco</h3>
+                        <p>Pasión, ritmo y duende en los tablaos de Andalucía. Una experiencia única.</p>
+                    </div>
+                </a>
+                <a href="https://es.wikipedia.org/wiki/Costa_del_Sol" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Litoral_entre_Marbella_y_Fuengirola_-_50003391192.jpg/500px-Litoral_entre_Marbella_y_Fuengirola_-_50003391192.jpg?w=400&h=300&fit=crop"
+                            alt="Costa del Sol">
+                    </div>
+                    <div class="card-content">
+                        <h3>Costa del Sol</h3>
+                        <p>Playas de ensueño, desde Marbella hasta Málaga. Sol garantizado.</p>
+                    </div>
+                </a>
+                <a href="https://es.wikipedia.org/wiki/La_Tomatina" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Tomatina_2006.jpg?w=400&h=300&fit=crop"
+                            alt="La Tomatina">
+                    </div>
+                    <div class="card-content">
+                        <h3>La Tomatina</h3>
+                        <p>La batalla de tomates más grande del mundo en Buñol, Valencia.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Descubre España - Make America Git Again 2025</p>
+        <p class="git-message">Git es genial!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découvrez la France - Tourisme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="back-btn">← Retour à la carte</a>
+        <span class="country-name">France</span>
+    </nav>
+
+    <header class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1>Bienvenue en France</h1>
+            <p class="tagline">L'art de vivre à la française</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Carte Interactive du Pays -->
+        <section class="map-section">
+            <h2>Explorez la France</h2>
+            <div class="country-map">
+                <svg viewBox="959.9 171.8 79.4 67.5" class="france-svg" id="countryMap">
+                    <!-- Silhouette de la France (vraie carte SVG) -->
+                    <path class="country-shape"
+                        d="M 1035.7 231.4 1034.2 236.3 1031.8 235 1030.5 230.8 1031.4 228.4 1034.6 226 1035.7 231.4 Z M 1014.4 185 1015.5 185.5 1016.9 185.4 1019.3 187 1026.5 188.2 1024.1 192.4 1023.7 196.9 1022.4 198 1020.1 197.4 1020.3 199 1016.7 202.5 1016.7 205.4 1019.1 204.4 1020.9 207.1 1020.8 208.9 1022.3 211.3 1020.6 213.2 1022.1 218.1 1024.9 218.9 1024.4 221.6 1019.9 225.2 1009.7 223.5 1002.3 225.6 1001.7 229.4 995.8 230.2 990 227.3 988.1 228.7 978.6 225.8 976.6 223.4 979.3 219.6 980.3 207 975.2 200.4 971.5 197.2 963.9 194.8 963.5 190.2 970 188.9 978.3 190.5 976.8 183.4 981.5 186.1 992.9 181.3 994.4 176.2 998.6 174.9 999.4 177.1 1001.6 177.2 1004 179.7 1007.5 182.6 1010 182.1 1014.4 185 Z" />
+
+                    <!-- Points d'intérêt -->
+                    <circle class="poi" cx="1001.0" cy="188.4" r="1.34" data-city="Paris"
+                        data-info="Capitale, Tour Eiffel, Louvre" />
+                    <circle class="poi" cx="1015.5" cy="213.0" r="1.34" data-city="Lyon"
+                        data-info="Gastronomie, Vieux Lyon" />
+                    <circle class="poi" cx="1028.5" cy="224.0" r="1.34" data-city="Nice"
+                        data-info="Côte d'Azur, Promenade des Anglais" />
+                    <circle class="poi" cx="985.2" cy="214.8" r="1.34" data-city="Bordeaux"
+                        data-info="Vignobles, Cité du Vin" />
+                    <circle class="poi" cx="985.2" cy="202.5" r="1.34" data-city="Nantes"
+                        data-info="Machines de l'île, Château des ducs" />
+                    <circle class="poi" cx="1029.9" cy="188.4" r="1.34" data-city="Strasbourg"
+                        data-info="Parlement européen, Marché de Noël" />
+                </svg>
+                <div class="poi-tooltip" id="tooltip"></div>
+            </div>
+            <p class="map-hint">Survolez les points pour découvrir les villes</p>
+        </section>
+
+        <!-- Informations générales -->
+        <section class="info-section">
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=100&h=100&fit=crop" alt="Paris">
+                <h3>Capitale</h3>
+                <p>Paris</p>
+            </div>
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=100&h=100&fit=crop"
+                    alt="Population">
+                <h3>Population</h3>
+                <p>67 millions</p>
+            </div>
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=100&h=100&fit=crop" alt="Euro">
+                <h3>Monnaie</h3>
+                <p>Euro (€)</p>
+            </div>
+            <div class="info-card">
+                <img class="icon" src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?w=100&h=100&fit=crop"
+                    alt="Langue">
+                <h3>Langue</h3>
+                <p>Français</p>
+            </div>
+        </section>
+
+        <!-- Monuments -->
+        <section class="category-section">
+            <h2>Monuments Emblématiques</h2>
+            <div class="cards-grid">
+                <a href="https://fr.wikipedia.org/wiki/Tour_Eiffel" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=400&h=300&fit=crop"
+                            alt="Tour Eiffel">
+                    </div>
+                    <div class="card-content">
+                        <h3>Tour Eiffel</h3>
+                        <p>Symbole de Paris, construite en 1889 pour l'Exposition universelle. 330 mètres de fer forgé.
+                        </p>
+                    </div>
+                </a>
+                <a href="https://fr.wikipedia.org/wiki/Château_de_Versailles" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_083.jpg/500px-Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_083.jpg?w=400&h=300&fit=crop"
+                            alt="Château de Versailles">
+                    </div>
+                    <div class="card-content">
+                        <h3>Château de Versailles</h3>
+                        <p>Résidence royale aux jardins somptueux, chef-d'œuvre de l'architecture française.</p>
+                    </div>
+                </a>
+                <a href="https://fr.wikipedia.org/wiki/Mont_Saint-Michel" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkxY0E9_7BS-9iOJ38wdvLPd9a-Pld_AiCBg&s?w=400&h=300&fit=crop"
+                            alt="Mont Saint-Michel">
+                    </div>
+                    <div class="card-content">
+                        <h3>Mont Saint-Michel</h3>
+                        <p>Abbaye perchée sur un îlot rocheux, merveille architecturale en Normandie.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Gastronomie -->
+        <section class="category-section">
+            <h2>Gastronomie</h2>
+            <div class="cards-grid">
+                <a href="https://fr.wikipedia.org/wiki/Croissant" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=300&fit=crop"
+                            alt="Croissant">
+                    </div>
+                    <div class="card-content">
+                        <h3>Croissant</h3>
+                        <p>Viennoiserie feuilletée au beurre, incontournable du petit-déjeuner français.</p>
+                    </div>
+                </a>
+                <a href="https://fr.wikipedia.org/wiki/Fromages" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862?w=400&h=300&fit=crop"
+                            alt="Fromages">
+                    </div>
+                    <div class="card-content">
+                        <h3>Fromages</h3>
+                        <p>Plus de 400 variétés : Camembert, Roquefort, Comté... Un patrimoine unique.</p>
+                    </div>
+                </a>
+                <a href="https://fr.wikipedia.org/wiki/Vins" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&h=300&fit=crop"
+                            alt="Vins">
+                    </div>
+                    <div class="card-content">
+                        <h3>Vins</h3>
+                        <p>Bordeaux, Bourgogne, Champagne... Les vignobles français sont légendaires.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Activités -->
+        <section class="category-section">
+            <h2>Activités</h2>
+            <div class="cards-grid">
+                <a href="https://fr.wikipedia.org/wiki/Ski_alpin" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/JO_B_Miller.jpg/500px-JO_B_Miller.jpg?w=400&h=300&fit=crop"
+                            alt="Ski dans les Alpes">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ski dans les Alpes</h3>
+                        <p>Chamonix, Courchevel, Val d'Isère... Des stations de renommée mondiale.</p>
+                    </div>
+                </a>
+                <a href="https://fr.wikipedia.org/wiki/Côte_d'Azur" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://www.frejus.fr/app/uploads/2024/12/cote-dazur-1-copie.webp?w=400&h=300&fit=crop"
+                            alt="Côte d'Azur">
+                    </div>
+                    <div class="card-content">
+                        <h3>Côte d'Azur</h3>
+                        <p>Plages de la Méditerranée, de Nice à Saint-Tropez. Soleil garanti.</p>
+                    </div>
+                </a>
+                <a href="https://fr.wikipedia.org/wiki/Provence" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://images.winalist.com/blog/wp-content/uploads/2021/05/26144030/AdobeStock_215601634-1024x684.jpeg?w=400&h=300&fit=crop"
+                            alt="Provence">
+                    </div>
+                    <div class="card-content">
+                        <h3>Provence</h3>
+                        <p>Champs de lavande, villages perchés et routes pittoresques.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Découvrez la France - Make America Git Again 2025</p>
+        <p class="git-message">Git est génial !</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

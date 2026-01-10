@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover the United Kingdom - Tourism</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="back-btn">← Back to Map</a>
+        <span class="country-name">United Kingdom</span>
+    </nav>
+
+    <header class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1>Welcome to the UK</h1>
+            <p class="tagline">Where tradition meets innovation</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="map-section">
+            <h2>Explore the UK</h2>
+            <div class="country-map">
+                <svg viewBox="948.0 126.9 48.7 58.1" class="country-svg" id="countryMap">
+                    <!-- Silhouette du Royaume-Uni (vraie carte SVG) -->
+                    <path class="country-shape"
+                        d="M 956.7 158.2 953.2 157 950.2 157.1 951.4 153.8 950.5 150.6 954.5 150.3 959.4 154.1 956.7 158.2 Z M 972.6 129.5 967.5 136 972.2 135.2 977.3 135.2 976 140.1 971.7 145.5 976.6 145.8 976.9 146.5 981.1 153.6 984.3 154.6 987.2 161.6 988.6 164 994.5 165.1 993.9 169.1 991.5 170.9 993.4 174.1 989 177.3 982.5 177.2 974.1 179 971.9 177.7 968.6 180.6 964.1 179.9 960.5 182.3 958 181.1 965.3 174.6 969.7 173.2 962.1 172.2 960.8 169.7 965.9 167.8 963.4 164.5 964.4 160.5 971.5 161.1 972.3 157.5 969.2 153.8 969.1 153.7 963.4 152.6 962.3 151 964.1 148.3 962.6 146.6 960 149.5 959.9 143.6 957.7 140.6 959.6 134.4 963.4 129.6 967 130 972.6 129.5 Z" />
+
+                    <!-- Points d'intérêt -->
+                    <circle class="poi" cx="983.4" cy="169.1" r="0.97" data-city="London"
+                        data-info="Capital, Big Ben, Tower Bridge" />
+                    <circle class="poi" cx="976.8" cy="158.5" r="0.97" data-city="Manchester"
+                        data-info="Football, Music Scene" />
+                    <circle class="poi" cx="972.4" cy="148.0" r="0.97" data-city="Edinburgh"
+                        data-info="Castle, Royal Mile" />
+                    <circle class="poi" cx="978" cy="163" r="0.97" data-city="Birmingham"
+                        data-info="Industry, Canals" />
+                    <circle class="poi" cx="974.6" cy="169.1" r="0.97" data-city="Cardiff"
+                        data-info="Castle, Millennium Centre" />
+                    <circle class="poi" cx="988" cy="165" r="0.97" data-city="Cambridge"
+                        data-info="University, Punting" />
+                </svg>
+                <div class="poi-tooltip" id="tooltip"></div>
+            </div>
+            <p class="map-hint">Hover over points to discover cities</p>
+        </section>
+
+        <section class="info-section">
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=100&h=100&fit=crop"
+                    alt="London">
+                <h3>Capital</h3>
+                <p>London</p>
+            </div>
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=100&h=100&fit=crop"
+                    alt="Population">
+                <h3>Population</h3>
+                <p>67 million</p>
+            </div>
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=100&h=100&fit=crop" alt="Pound">
+                <h3>Currency</h3>
+                <p>Pound (£)</p>
+            </div>
+            <div class="info-card">
+                <img class="icon" src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=100&h=100&fit=crop"
+                    alt="English">
+                <h3>Language</h3>
+                <p>English</p>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Iconic Landmarks</h2>
+            <div class="cards-grid">
+                <a href="https://en.wikipedia.org/wiki/Tower_of_London" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Tower_of_London_from_the_Shard_%288515883950%29.jpg/500px-Tower_of_London_from_the_Shard_%288515883950%29.jpg?w=400&h=300&fit=crop"
+                            alt="Tower of London">
+                    </div>
+                    <div class="card-content">
+                        <h3>Tower of London</h3>
+                        <p>Historic castle and fortress, home to the Crown Jewels for over 900 years.</p>
+                    </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Big_Ben" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Elizabeth_Tower%2C_June_2022.jpg/330px-Elizabeth_Tower%2C_June_2022.jpg?w=400&h=300&fit=crop"
+                            alt="Big Ben">
+                    </div>
+                    <div class="card-content">
+                        <h3>Big Ben</h3>
+                        <p>The iconic clock tower at Westminster, symbol of London and British democracy.</p>
+                    </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Stonehenge" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/500px-Stonehenge2007_07_30.jpg?w=400&h=300&fit=crop"
+                            alt="Stonehenge">
+                    </div>
+                    <div class="card-content">
+                        <h3>Stonehenge</h3>
+                        <p>Prehistoric monument dating back 5,000 years, shrouded in mystery.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2>British Cuisine</h2>
+            <div class="cards-grid">
+                <a href="https://en.wikipedia.org/wiki/Fish_&_Chips" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Fish_and_chips_blackpool.jpg/500px-Fish_and_chips_blackpool.jpg?w=400&h=300&fit=crop"
+                            alt="Fish and Chips">
+                    </div>
+                    <div class="card-content">
+                        <h3>Fish & Chips</h3>
+                        <p>Crispy battered fish with golden chips, a seaside classic since the 1860s.</p>
+                    </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Meat_pie_(Australia_and_New_Zealand)?oldid=1037563974"
+                    class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Aussie_meat_pie_%28cropped%29.jpg/500px-Aussie_meat_pie_%28cropped%29.jpg?w=400&h=300&fit=crop"
+                            alt="Meat Pies">
+                    </div>
+                    <div class="card-content">
+                        <h3>Meat Pies</h3>
+                        <p>Hearty pastries filled with meat and gravy, from Cornish pasties to pork pies.</p>
+                    </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/English_breakfast_tea" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Mug_of_English_breakfast_tea.jpg/500px-Mug_of_English_breakfast_tea.jpg?w=400&h=300&fit=crop"
+                            alt="Afternoon Tea">
+                    </div>
+                    <div class="card-content">
+                        <h3>Afternoon Tea</h3>
+                        <p>Scones, sandwiches, and pastries with a proper cuppa. A British institution.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="category-section">
+            <h2>Activities</h2>
+            <div class="cards-grid">
+                <a href="https://en.wikipedia.org/wiki/Football" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=400&h=300&fit=crop"
+                            alt="Football">
+                    </div>
+                    <div class="card-content">
+                        <h3>Football Matches</h3>
+                        <p>Experience the Premier League atmosphere at legendary stadiums.</p>
+                    </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/West_End_Theatre" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/London_%2844761485915%29.jpg/960px-London_%2844761485915%29.jpg?w=400&h=300&fit=crop"
+                            alt="West End Theatre">
+                    </div>
+                    <div class="card-content">
+                        <h3>West End Theatre</h3>
+                        <p>World-class musicals and plays in London's famous theatre district.</p>
+                    </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Scottish_Highlands" class="card" target="_blank">
+                    <div class="card-image">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/%27Scottish_Highlands%27.jpg/500px-%27Scottish_Highlands%27.jpg?w=400&h=300&fit=crop"
+                            alt="Scottish Highlands">
+                    </div>
+                    <div class="card-content">
+                        <h3>Scottish Highlands</h3>
+                        <p>Dramatic landscapes, lochs, and castles in breathtaking scenery.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Discover the UK - Make America Git Again 2025</p>
+        <p class="git-message">Git is awesome!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

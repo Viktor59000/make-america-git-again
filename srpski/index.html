@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Откријте Србију - Туризам</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="back-btn">← Назад на мапу</a>
+        <span class="country-name"> Србија</span>
+    </nav>
+    <header class="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1628178652467-3c32b210f8fa?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1>Добродошли у Србију</h1>
+            <p class="tagline">Срце Балкана</p>
+        </div>
+    </header>
+    <main class="container">
+        <section class="map-section">
+            <h2>️ Истражите Србију</h2>
+            <div class="country-map">
+                <svg viewBox="1080.4 204.8 25.2 27.3" class="country-svg" id="countryMap">
+                    <!-- Silhouette de la Serbie (vraie carte SVG) -->
+                    <path class="country-shape"
+                        d="M1102 218.2l-1.1 1.4 0.7 2.4 2.8 2.7-1.8 2-0.6 2 0.6 0.8-0.7 0.8-2.4 0.2-1.7 0.3-0.3-0.5 0.6-0.7 0.4-1.6-0.7 0.1-1.1-1.2-0.9-0.3-0.8-1-1-0.4-0.8-0.9-0.9 0.4-0.5 2.1-1.2 0.4 0.4-0.5-2.1-1.3-1.7-0.7-0.9-0.9-1.4-1.1 1.1-0.3 0.5-2.9-2.7-2.5 1.1-2.8-1.9 0.1 1.7-2.4-1.7-1.8-1.5-2.5 3.7-1.6 3.2 0.3 3 2.4 0.8 2.1 3.2 1.4 0.7 2.6 3.1 1.9 1.5-1.4 1.3 0.7-1 1.1 1 1.1z" />
+
+                    <!-- Points d'intérêt ajustés -->
+                    <circle class="poi" cx="1094.1" cy="214.7" r="0.50" data-city="Београд"
+                        data-info="Главни град, Калемегдан" />
+                    <circle class="poi" cx="1091.8" cy="211.0" r="0.50" data-city="Нови Сад"
+                        data-info="Петроварадин, EXIT" />
+                    <circle class="poi" cx="1098.7" cy="223.4" r="0.50" data-city="Ниш"
+                        data-info="Тврђава, Ћеле кула" />
+                    <circle class="poi" cx="1092.9" cy="225.8" r="0.50" data-city="Копаоник"
+                        data-info="Скијање, Планине" />
+                    <circle class="poi" cx="1091.8" cy="208.5" r="0.50" data-city="Суботица"
+                        data-info="Арт нуво, Палић" />
+                </svg>
+                <div class="poi-tooltip" id="tooltip"></div>
+            </div>
+        </section>
+        <section class="info-section">
+            <div class="info-card">
+                <img class="icon" src="https://images.unsplash.com/photo-1548685913-fe6678babe8d?w=100&h=100&fit=crop"
+                    alt="Beograd">
+                <h3>Главни град</h3>
+                <p>Београд</p>
+            </div>
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=100&h=100&fit=crop"
+                    alt="Stanovnistvo">
+                <h3>Становништво</h3>
+                <p>7 мил</p>
+            </div>
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=100&h=100&fit=crop"
+                    alt="Valuta">
+                <h3>Валута</h3>
+                <p>Динар</p>
+            </div>
+            <div class="info-card">
+                <img class="icon"
+                    src="https://images.unsplash.com/photo-1527866512907-a35a62a0f6c5?w=100&h=100&fit=crop" alt="Jezik">
+                <h3>Језик</h3>
+                <p>Српски</p>
+            </div>
+        </section>
+        <section class="category-section">
+            <h2> Знаменитости</h2>
+            <div class="cards-grid">
+                <a href="https://sr.wikipedia.org/wiki/Калемегдан" class="card" target="_blank">
+                    <div class="card-image">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/20230422.Blick_von_der_Festung.Belgrad.-021.jpg/500px-20230422.Blick_von_der_Festung.Belgrad.-021.jpg?w=400&h=300&fit=crop">
+                    </div>
+                    <div class="card-content">
+                        <h3>Калемегдан</h3>
+                        <p>Древна тврђава на ушћу Саве и Дунава.</p>
+                    </div>
+                </a>
+                <a href="https://fr.wikipedia.org/wiki/%C3%89glise_Saint-Sava_de_Belgrade" class="card" target="_blank">
+                    <div class="card-image">
+                        <img
+                            src=https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hram_svetog_save_beograd_0005.jpg/500px-Hram_svetog_save_beograd_0005.jpg?w=400&h=300&fit=crop">
+                    </div>
+                    <div class="card-content">
+                        <h3>Храм Светог Саве</h3>
+                        <p>Једна од највећих православних цркава на свету.</p>
+                    </div>
+                </a>
+                <a href="https://sr.wikipedia.org/wiki/Студеница" class="card" target="_blank">
+                    <div class="card-image">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D0%B8%D1%86%D0%B0%2C_%D0%BF%D0%BE%D0%BD%D0%BE%D1%81_%D0%9D%D0%B5%D0%BC%D0%B0%D1%9A%D0%B8%D1%9B%D0%B0.jpg/500px-%D0%A1%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D0%B8%D1%86%D0%B0%2C_%D0%BF%D0%BE%D0%BD%D0%BE%D1%81_%D0%9D%D0%B5%D0%BC%D0%B0%D1%9A%D0%B8%D1%9B%D0%B0.jpg?w=400&h=300&fit=crop">
+                    </div>
+                    <div class="card-content">
+                        <h3>Студеница</h3>
+                        <p>Средњовековни манастир, УНЕСКО баштина.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="category-section">
+            <h2>️ Српска кухиња</h2>
+            <div class="cards-grid">
+                <a href="https://sr.wikipedia.org/wiki/Ћевапи" class="card" target="_blank">
+                    <div class="card-image">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/%C4%86evap%C4%8Di%C4%87i.jpg/500px-%C4%86evap%C4%8Di%C4%87i.jpg?w=400&h=300&fit=crop">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ћевапи</h3>
+                        <p>Гриловано млевено месо, национално јело.</p>
+                    </div>
+                </a>
+                <a href="https://sr.wikipedia.org/wiki/Бурек" class="card" target="_blank">
+                    <div class="card-image">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Meat_burek_%28GAK_bakery%2C_Belgrade%2C_Serbia%29.jpg/500px-Meat_burek_%28GAK_bakery%2C_Belgrade%2C_Serbia%29.jpg?w=400&h=300&fit=crop">
+                    </div>
+                    <div class="card-content">
+                        <h3>Бурек</h3>
+                        <p>Питa са месом или сиром, традиционални доручак.</p>
+                    </div>
+                </a>
+                <a href="https://sr.wikipedia.org/wiki/Ракија" class="card" target="_blank">
+                    <div class="card-image">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Vru%C4%87a_rakija_1.jpg/330px-Vru%C4%87a_rakija_1.jpg?w=400&h=300&fit=crop">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ракија</h3>
+                        <p>Традиционална воћна ракија, симбол гостопримства.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="category-section">
+            <h2> Активности</h2>
+            <div class="cards-grid">
+                <a href="https://sr.wikipedia.org/wiki/EXIT_Фестивал" class="card" target="_blank">
+                    <div class="card-image">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Exit_festival%2C_2021.jpg/500px-Exit_festival%2C_2021.jpg?w=400&h=300&fit=crop">
+                    </div>
+                    <div class="card-content">
+                        <h3>EXIT Фестивал</h3>
+                        <p>Један од највећих музичких фестивала у Европи.</p>
+                    </div>
+                </a>
+                <a href="https://sr.wikipedia.org/wiki/Копаоник" class="card" target="_blank">
+                    <div class="card-image">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Pan%C4%8Di%C4%87ev_vrh_during_winter.jpg/500px-Pan%C4%8Di%C4%87ev_vrh_during_winter.jpg?w=400&h=300&fit=crop">
+                    </div>
+                    <div class="card-content">
+                        <h3>Копаоник</h3>
+                        <p>Најпопуларније скијалиште у Србији.</p>
+                    </div>
+                </a>
+                <a href="https://sr.wikipedia.org/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%BD%D0%B8_%D0%BF%D0%B0%D1%80%D0%BA_%D0%82%D0%B5%D1%80%D0%B4%D0%B0%D0%BF"
+                    class="card" target="_blank">
+                    <div class="card-image">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Veliki_Kazan.jpg/500px-Veliki_Kazan.jpg?w=400&h=300&fit=crop">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ђердап</h3>
+                        <p>Национални парк на Дунаву, величанствена клисура.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Откријте Србију - Make America Git Again 2025</p>
+        <p class="git-message">Git је генијалан! </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
